@@ -17,17 +17,83 @@
 // -- Haciendolo con desestructuracion
 
 //ignoramos los dos primeros indices con el espacio entre "," que serian "node y start"     
-const [, , method,resource]=process.argv;
+// let [, , method,resource]=process.argv;
 
-if (method.toUpperCase()=="GET" && resource.toLowerCase() == "products"){
+
+// method = method.toUpperCase();
+// resource = resource.toLowerCase();
+
+
+
+// const match = argv.find((arg)=>/^products\/\id+$/.test(arg));
+// const id =match ? match.split("/")[1]: null;
+
+// if( method == "GET" && id){
+
+// }
+
+//Metodos asincronos
+// if (method=="GET" && resource== "products"){
     //listado de productos extraidos desde esta api
 //    fetch('https://fakestoreapi.com/products')
 //   .then(response => response.json())
 //   .then(data => console.log(data));
 
-// Forma de hacerco con promesa AWAIT 
-//traimos con fetch   
-const response= await fetch('https://fakestoreapi.com/products')
-//transormamos en json
+
+// Forma de hacerco con promesa AWAIT (asinscrono) 
+
+//traemos con fetch   
+// const response= await fetch('https://fakestoreapi.com/products'+ id)
+//transformamos en json
+    // const data = await response.json()
+    // console.log(data)};
+
+//Solo obtener la ruta de los productos:
+
+// if(method == "GET" && resource.startsWith("products/")){
+    // const params = resource.split("/")
+    // console.log(params);
+
+    //para tener solo el id de un producto
+    // const [, id]= resource.split("/")
+    //O esta opcion creamos una variable id y le decimos que traiga el elemeno 1 
+    // let id= resource.split("/") [1];
+    // id=parseInt(id);
+    // validamos , si no es un numero o es menor o igual a 0 "no es un numero"
+    // if(isNaN(id) || id <= 0){
+    //     console.log("No es un numero");
+    // }
+    // const response= await fetch('https://fakestoreapi.com/products'+ id)
+//transformamos en json
+    // const data = await response.json()
+    // console.log(data)
+    
+    // console.log(id);
+    //npm start GET products/hola comando para arrancar la api
+// };    
+
+let [, , method,resource]=process.argv;
+
+method = method.toUpperCase();
+resource = resource.toLowerCase();
+
+if(method == "GET" && resource.startsWith("products/")){
+    let id = resource.split("/") [1];
+    id = parseInt(id);
+
+    if(isNaN(id) || id <= 0){
+        console.log("No es un numero");
+    }
+    fetch('https://fakestoreapi.com/products/' + id)
+        .then(response => response.json())
+        .then(data => console.log(data));
+
+if (method == "GET" && resource== "products"){
+    const response= await fetch('https://fakestoreapi.com/products/')
     const data = await response.json()
-    console.log(data)};
+    console.log(data)
+    }        
+}
+
+
+
