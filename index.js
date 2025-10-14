@@ -120,5 +120,37 @@ if(method == "POST" && resource=="products"){
       .then(data => console.log(data));
 }
 
+//Metodo PUT 
+if(method == "PUT" && resource.startsWith("products")){
+    let id = resource.split("/") [1];
+    id = parseInt(id);
 
+    const [title, price, category]=params;
+    const product={
+        title,
+        price,
+        category
+    }
+    fetch('https://fakestoreapi.com/products/' + id, {
+      method: "PUT",
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(product)
+    })
+      .then(response => response.json())
+      .then(data => console.log(data));
+
+}
+
+
+
+//Metodo DELETE
+
+// if(method == "DELETE" && resource=="products"){
+//     Copy
+//         fetch('https://fakestoreapi.com/products/1', {
+//     method: 'DELETE'
+//     })
+//     .then(response => response.json())
+//     .then(data => console.log(data));
+// }
 
