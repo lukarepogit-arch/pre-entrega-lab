@@ -1,0 +1,38 @@
+[
+   {
+    "id":1,
+    "name":"Colchón en Caja YOLO by Simmons 2 Plazas 190x140",
+    "description":"Esta línea de colchones de espumas de alta densidad está diseñada para proporcionar una firmeza confortable, ideal para un descanso reparador.",
+    "price": 370.222,
+    "image": "/img/Colchon.webp"
+ },
+{
+    "id":2,
+    "name":"Monitor Gadnic 24 Led Pantalla Full HD 75hz HDMI VGA Montaje VESA Para PC Negro",
+    "description":"Pantalla Full HD de 24 pulgadas para una visualización clara.El Monitor 24 GADNIC ofrece resolución 1920x1080 que permite trabajarestudiar o disfrutar contenido multimedia con mayor definición y buena reproducción de color en el uso diario",
+    "price": 137.249,
+    "image": "/img/monitor.webp"
+ },
+ {
+    "id":3,
+    "name":"Apple iPhone 16 (128 GB) - Negro - Distribuidor Autorizado",
+    "description":"Con Control de la Cámara. Cámara Fusion de 48 MP. Cinco colores espectaculares. Y el chip A18.",
+    "price": 1799.999,
+    "image": "/img/Iphone16.jpg"
+ },
+ {
+    "id":4,
+    "name":"Zapatillas Para Hombre Nike Downshifter 13 Negro Fd6454-001",
+    "description":"Ya sea que estés recién comenzando a correr o que ya tengas experiencia y ansíes cambiar tu ritmo,los Downshifter 13 están listos para acompañarte. Con una parte superior renovada, amortiguación y durabilidad, te ayudan a encontrar esa velocidad adicional o a dar ese primer paso para alcanzar tus objetivos. Confeccionada con Nike Grind. La suela contiene al menos un 15% de material Nike Grind, fabricado con residuos del proceso de manufactura de calzado. Malla transpirable. La malla suave y cómoda ofrece un alto nivel de transpirabilidad. Soporte y seguridad. La banda de ajuste interna actualizada ofrece contención alrededor del mediopié para brindar soporte y seguridad.",
+    "price": 127.864,
+    "image": "/img/zapatillasNike.webp"
+ },
+ {
+    "id":5,
+    "name":"Guitarra Electirca Schecter Banshee A 6 Floyd Rose Tbb",
+    "description":"La Schecter Banshee 6 cuenta con una pastilla activa EMG-81 en la posición del puente y una pastilla activa EMG-85 en la posición del Mástil. Esta combinación probada y le da enorme versatilidad tonal, con la pastilla del 85 Mástil entrega de muscular, gruñendo tonos de ritmo y la pastilla del 81 puente producción conduce punzante, intenso. Aunque estas pastillas son perfectas para los estilos de metal, su tono suave y detallada hace muy adecuado para una amplia gama de géneros.",
+    "price": 1587.780,
+    "image": "/img/guitarra.webp"
+ }
+
+]
